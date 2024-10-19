@@ -9,8 +9,8 @@ public class HealthController {
   @GetMapping("/")
   public ResponseEntity<?> ebHealth() {
     return new ResponseEntity<>(HttpStatus.OK);
-  } @
-      GetMapping("/health")
+  }
+  @GetMapping("/health")
   public ResponseEntity<?> health() {
     return new ResponseEntity<>(HttpStatus.OK);
   }

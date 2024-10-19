@@ -1,8 +1,9 @@
 package com.multiversa.tutorial.controller;
 
 import com.multiversa.tutorial.model.Product;
-import com.multiversa.tutorial.service.ProductService; // vai dar erro por enquanto
-import org.springframework.beans.factory.annotation.Autowired;import org.springframework.http.ResponseEntity;
+import com.multiversa.tutorial.service.ProductService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 @RestController
@@ -43,5 +44,4 @@ public class ProductController {
   public List<Product> getProductsByName2(@PathVariable String name) {
     return productService.getProductsByName(name);
   }
-
 }
